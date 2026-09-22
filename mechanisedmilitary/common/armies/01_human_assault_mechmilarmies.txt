@@ -1,0 +1,1376 @@
+# Mechanised Military Assault Armies
+
+
+########################################################################
+##### Human Armies #####################################################
+########################################################################
+## Ground Units
+# 1 Dog Unit
+dog_unit = {
+	damage = 1.1
+	health = 1
+	morale = 1.15
+	morale_damage = 1.1
+	collateral_damage = 1
+	war_exhaustion = 1
+	time = 110
+	icon = gfx_army_type_dog_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 110
+			food = 100
+		}
+		upkeep = {
+			energy = 1.1
+			food = 0.5
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+}
+
+# 2 Paratrooper Unit
+paratrooper_unit = {
+	damage = 3
+	health = 2
+	morale = 1
+	morale_damage = 1
+	collateral_damage = 1
+	war_exhaustion = 1
+	time = 180
+	icon = gfx_army_type_paratrooper_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies2
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			food = 150
+		}
+		upkeep = {
+			energy = 1.1
+			food = 1
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_stronghold"
+		OR = {
+			has_building = building_stronghold
+		}
+	}
+}
+
+# 3 Commando Unit
+commando_unit = {
+	damage = 3
+	health = 2
+	morale = 1
+	morale_damage = 1
+	collateral_damage = 1
+	war_exhaustion = 1
+	time = 180
+	icon = gfx_army_type_dog_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies2
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			food = 150
+		}
+		upkeep = {
+			energy = 1.1
+			food = 1
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_stronghold"
+		OR = {
+			has_building = building_stronghold
+		}
+	}
+}
+
+# 4 Mortar Unit
+mortar_unit = {
+	damage = 1.6
+	health = 0.8
+	morale = 1.1
+	morale_damage = 1
+	collateral_damage = 1.5
+	war_exhaustion = 1.4
+	time = 150
+	icon = gfx_army_type_mortar_unit
+	prerequisites = {
+		tech_mechmilarmy_artillery
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 125
+			food = 75
+			alloys = 25
+		}
+		upkeep = {
+			energy = 1.25
+			alloys = 0.5
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_stronghold"
+		OR = {
+			has_building = building_stronghold
+		}
+	}
+}
+
+# 5 Artillery
+artillery_unit = {
+	damage = 10
+	health = 0.7
+	morale = 1.4
+	morale_damage = 1.5
+	collateral_damage = 2
+	war_exhaustion = 1.8
+	time = 220
+	icon = gfx_army_type_artillery_unit
+	prerequisites = {
+		tech_mechmilarmy_artillery
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 1.5
+			alloys = 1
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_fortress"
+		OR = {
+			has_building = building_fortress
+		}
+	}
+}
+
+## Armored Vehicles
+# 6 Light Armoured Vehicles
+lav_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_ship_armor_1
+		tech_mechmilarmy_armoured_vehicles
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_armoured_vehicle_factory"
+		OR = {
+			has_building = building_mechmil_armoured_vehicle_plant
+			has_building = building_mechmil_mega_armoured_vehicle_plant
+			has_building = building_mechmil_ultimate_armoured_vehicle_plant
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 7 Armoured Personnel Carriers
+apc_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_apc_unit
+	prerequisites = {
+		tech_ship_armor_1
+		tech_mechmilarmy_armoured_vehicles
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_armoured_vehicle_factory"
+		OR = {
+			has_building = building_mechmil_armoured_vehicle_plant
+			has_building = building_mechmil_mega_armoured_vehicle_plant
+			has_building = building_mechmil_ultimate_armoured_vehicle_plant
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 8 Infantry Fighting Vehicle
+ifv_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_ifv_unit
+	prerequisites = {
+		tech_ship_armor_1
+		tech_mechmilarmy_armoured_vehicles_upgrade_one
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_armoured_vehicle_factory"
+		OR = {
+			has_building = building_mechmil_armoured_vehicle_plant
+			has_building = building_mechmil_mega_armoured_vehicle_plant
+			has_building = building_mechmil_ultimate_armoured_vehicle_plant
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 9 Tank Unit
+tank_unit_gen1 = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_tank_unit
+	prerequisites = {
+		tech_ship_armor_1
+		tech_mechmilarmy_tank_factory
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_tank_factory"
+		OR = {
+			has_building = building_mechmil_tank_factory
+			has_building = building_mechmil_mega_tank_factory
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 10 Tank v2
+tank_unit_gen2 = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_tank_unit
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_1
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3000
+			alloys = 500
+		}
+		upkeep = {
+			energy = 3
+			alloys = 2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_tank_factory"
+		OR = {
+			has_building = building_mechmil_tank_factory
+			has_building = building_mechmil_mega_tank_factory
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 11 Tank v3
+tank_unit_gen3 = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_tank_unit
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_2
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3000
+			alloys = 500
+		}
+		upkeep = {
+			energy = 3
+			alloys = 2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_tank_factory"
+		OR = {
+			has_building = building_mechmil_tank_factory
+			has_building = building_mechmil_mega_tank_factory
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 12 Tank v4
+tank_unit_gen4 = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_tank_unit
+	prerequisites = {
+		tech_mechmilarmy_mega_tank_factory
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3000
+			alloys = 500
+		}
+		upkeep = {
+			energy = 3
+			alloys = 2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_tank_factory"
+		OR = {
+			has_building = building_mechmil_mega_tank_factory
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 13 Tank v5
+tank_unit_gen5 = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_tank_unit
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_3
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3000
+			alloys = 500
+		}
+		upkeep = {
+			energy = 3
+			alloys = 2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_tank_factory"
+		OR = {
+			has_building = building_mechmil_mega_tank_factory
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+# 14 Tank v6
+tank_unit_gen6 = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_tank_unit
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_4
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 3000
+			alloys = 500
+		}
+		upkeep = {
+			energy = 3
+			alloys = 2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_tank_factory"
+		OR = {
+			has_building = building_mechmil_mega_tank_factory
+			has_building = building_mechmil_vanguard_vehicle_forge
+		}
+	}
+}
+
+### Sea Planet Only (Can only be created on Ocean Worlds)
+## Naval Units
+
+# 15 RIB
+rib_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_rib_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 16 Hovercraft
+hovercraft_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_hovercraft_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 17 Fast Attack Craft
+fast_attack_craft_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_fast_attack_craft_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 18 Patrol Boat
+patrol_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_patrol_boat_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 19 Corvette
+corvette_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_corvette_boat_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 20 Frigate
+frigate_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_frigate_boat_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 21 Destroyer
+destroyer_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_destroyer_boat_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 22 Light Cruiser
+light_cruiser_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 23 Heavy Cruiser
+heavy_cruiser_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_small_naval_dock
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 24 Battleship Cruiser
+battle_cruiser_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_2
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 25 Battleship
+battleship_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_2
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 26 Stealth Boat
+stealth_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_2
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 27 Amphibious Assault Boat
+amphibious_assualt_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_3
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 28 Helicopter Carrier
+helicopter_carrier_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_3
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 29 Aircraft Carrier
+aircraft_carrier_boat_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_3
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 30 Submarine Unit
+submarine_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_submarines
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_medium_naval_dock
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+# 31 Nuclear Submarine Unit
+nuclear_submarine_unit = {
+	damage = 8
+	health = 5
+	morale = 2
+	has_morale = yes
+	morale_damage = 2
+	collateral_damage = 2
+	war_exhaustion = 1.3
+	time = 150
+	icon = gfx_army_type_lav_unit
+	prerequisites = {
+		tech_mechmilarmy_submarines
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_naval_dock"
+		OR = {
+			has_building = building_mechmil_large_naval_dock
+		}
+	}
+}
+
+## Ariel Units
+
+# 32 Bomb Drone
+bomb_drone_unit = {
+	damage = 1.25
+	health = 1.1
+	morale = 1.2
+	has_morale = yes
+	morale_damage = 1.1
+	collateral_damage = 1.3
+	war_exhaustion = 1.2
+	time = 120
+	icon = gfx_army_type_bomb_drone_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_ariel_hanger"
+		OR = {
+			has_building = building_mechmil_small_ariel_hangar
+		}
+	}
+}
+
+# 33 RC Drone
+rc_drone_unit = {
+	damage = 1.25
+	health = 1.1
+	morale = 1.2
+	has_morale = yes
+	morale_damage = 1.1
+	collateral_damage = 1.3
+	war_exhaustion = 1.2
+	time = 120
+	icon = gfx_army_type_bomb_drone_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_ariel_hanger"
+		OR = {
+			has_building = building_mechmil_small_ariel_hangar
+		}
+	}
+}
+
+# 34 Unmanned Drone
+unmanned_drone_unit = {
+	damage = 1.25
+	health = 1.1
+	morale = 1.2
+	has_morale = yes
+	morale_damage = 1.1
+	collateral_damage = 1.3
+	war_exhaustion = 1.2
+	time = 120
+	icon = gfx_army_type_bomb_drone_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_ariel_hanger"
+		OR = {
+			has_building = building_mechmil_medium_ariel_hangar
+		}
+	}
+}
+
+# 35 Combat Transport Helicopter (Delivers Units)
+combat_transport_helicopter_unit = {
+	damage = 1.25
+	health = 1.1
+	morale = 1.2
+	has_morale = yes
+	morale_damage = 1.1
+	collateral_damage = 1.3
+	war_exhaustion = 1.2
+	time = 120
+	icon = gfx_army_type_bomb_drone_unit
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2750
+			alloys = 120
+		}
+		upkeep = {
+			energy = 3
+			alloys = 1.2
+		}
+	}
+	potential = {
+		from = {
+			is_species_class = HUM
+		}
+	}
+	allow = {
+		custom_tooltip = "requires_ariel_hanger"
+		OR = {
+			has_building = building_mechmil_medium_ariel_hangar
+		}
+	}
+}

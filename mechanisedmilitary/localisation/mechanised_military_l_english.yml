@@ -1,0 +1,198 @@
+﻿l_english:
+
+## Techs
+ tech_mechmilarmy_advanced_armies1:0 "Advanced Armies I"
+ tech_mechmilarmy_advanced_armies1_desc:0 "Advanced Armies I"
+ tech_mechmilarmy_advanced_armies2:0 "Advanced Armies II"
+ tech_mechmilarmy_advanced_armies2_desc:0 "Advanced Armies II"
+ tech_mechmilarmy_artillery:0 "Artillery"
+ tech_mechmilarmy_artillery_desc:0 "Artillery"
+ 
+ ### Assualt Armies
+ # Dog Unit
+ dog_unit:0 "Dog Unit"
+ dog_unit_plural:0 "Dog Units"
+ dog_unit_desc:0 "A squadron with dogs trained to kill. Though mans best friend for centuries, they're also natural hunters. Given the proper training to hunt down selected targets."
+ 
+ # Paratrooper Unit
+ paratrooper_unit:0 "Paratrooper Unit"
+ paratrooper_unit_plural:0 "Paratrooper Units"
+ paratrooper_unit_desc:0 "Traditionally paratroopers fight only as light infantry armed with small arms and light weapons, although some paratroopers can also function as artillerymen or mechanized infantry by utilizing field guns, infantry fighting vehicles and light tanks that are airdropped together into the combat zone."
+ 
+ # Commando Unit
+ commando_unit:0 "Commando Squad"
+ commando_unit_plural:0 "Commando Platoon"
+ commando_unit_desc:0 "Specialized unit for high-risk missions and direct action operations."
+ 
+ # Mortars
+ mortar_unit:0 "Mortar Unit"
+ mortar_unit_plural:0 "Mortars"
+ mortar_unit_desc:0 "A mortar unit is a specialized military team equipped with mortars, which are portable, short-barreled artillery pieces designed to launch explosive shells at high angles. These units excel in indirect fire support, delivering powerful, arcing shots that can strike enemy positions hidden from direct line of sight."
+ 
+ # Artillery
+ artillery_unit:0 "Artillery Unit"
+ artillery_unit_plural:0 "Artillery Units"
+ artillery_unit_desc:0 "An artillery unit is a military team that operates heavy firearms like howitzers and cannons to provide long-range fire support, targeting enemy positions with powerful, precise bombardments."
+ 
+ # Bomb Drone
+ bomb_drone_unit:0 "Bomb Drone Unit"
+ bomb_drone_unit_plural:0 "Dog Units"
+ bomb_drone_unit_desc:0 "A bomb drone unit is a military team that operates unmanned aerial vehicles equipped with explosives, designed for precise, remote attacks on enemy targets."
+ 
+ # Radio Controlled Drone
+ rc_drone_unit:0 "Radio Controlled Drone Unit"
+ rc_drone_unit_plural:0 "Radio Controlled Drone Units"
+ rc_drone_unit_desc:0 "A versatile, remotely piloted system used for reconnaissance, target acquisition, and tactical support. Equipped with advanced optics and GPS, it provides real-time data while keeping operators safe from harm."
+ 
+ # Unmanned Drone
+ unmanned_drone_unit:0 "Unmanned Drone Unit"
+ unmanned_drone_unit_plural:0 "Unmanned Drone Units"
+ unmanned_drone_unit_desc:0 "An autonomous system for reconnaissance, surveillance, and tactical missions. Equipped with advanced sensors and AI, it operates independently to provide real-time intelligence while minimizing human risk."
+ 
+ # Combat Transport Helicopter
+ unmanned_drone_unit:0 "Combat Transport Helicopter"
+ unmanned_drone_unit_plural:0 "Combat Transport Helicopters"
+ unmanned_drone_unit_desc:0 "A versatile aircraft designed for troop deployment, equipment transport, and close air support. Armed and armored, it provides mobility and firepower in hostile environments.."
+ 
+ ## Armoured Vehicles
+ # Units
+ lav_unit:0 "Light Armoured Vehicle"
+ lav_unit_plural:0 "Light Armoured Vehicles"
+ lav_unit_desc:0 "Light armoured vehicles are fast and versatile combat vehicles designed for reconnaissance, troop transport, and support roles, offering a balance of mobility and protection."
+ apc_unit:0 "Armoured Personnel Carrier"
+ apc_unit_plural:0 "Armoured Personnel Carriers"
+ apc_unit_desc:0 "Armoured personnel carriers (APCs) are heavily protected vehicles designed to transport infantry safely across combat zones, providing both mobility and defense against small arms fire and shrapnel."
+ ifv_unit:0 "Infantry Fighting Vehicle"
+ ifv_unit_plural:0 "Infantry Fighting Vehicles"
+ ifv_unit_desc:0 "Infantry fighting vehicles (IFVs) are armored combat vehicles that transport infantry while providing fire support with integrated weapons systems, combining mobility, protection, and firepower."
+ 
+ # Buildings
+ building_mechmil_armoured_vehicle_plant:0 "Armoured Vehicle Plant"
+ building_mechmil_mega_armoured_vehicle_plant:0 "Mega Armoured Vehicle Plant"
+ building_mechmil_ultimate_armoured_vehicle_plant:0 "Ultimate Armoured Vehicle Plant"
+ 
+ # Techs
+ tech_mechmilarmy_armoured_vehicles:0 "Armoured Vehicles"
+ tech_mechmilarmy_armoured_vehicles_upgrade_one:0 "Exotic Layered Armour"
+ 
+ ## Tanks
+ # Units
+ tank_unit_gen1:0 "Gen I - Tank Unit"
+ tank_unit_gen1_plural:0 "Generation 1 Tank Squadron"
+ tank_unit_gen1_desc:0 "A Generation I tank unit is a military formation that operates armored vehicles equipped with heavy guns, designed for frontline combat and breakthrough operations."
+ tank_unit_gen2:0 "Gen II - Tank Unit"
+ tank_unit_gen2_plural:0 "Generation 2 Tank Squadron"
+ tank_unit_gen2_desc:0 "A Mk2 tank unit is a military formation that operates armored vehicles equipped with heavy guns, designed for frontline combat and breakthrough operations."
+ tank_unit_gen3:0 "Gen III - Tank Unit"
+ tank_unit_gen3_plural:0 "Generation 3 Tank Squadron"
+ tank_unit_gen3_desc:0 "A Mk3 tank unit is a military formation that operates armored vehicles equipped with heavy guns, designed for frontline combat and breakthrough operations."
+ tank_unit_gen4:0 "Gen IV - Tank Unit"
+ tank_unit_gen4_plural:0 "Generation 4 Tank Squadron"
+ tank_unit_gen4_desc:0 "A Mk4 tank unit is a military formation that operates armored vehicles equipped with heavy guns, designed for frontline combat and breakthrough operations."
+ tank_unit_gen5:0 "Gen V - Tank Unit"
+ tank_unit_gen5_plural:0 "Generation 5 Tank Squadron"
+ tank_unit_gen5_desc:0 "A Mk5 tank unit is a military formation that operates armored vehicles equipped with heavy guns, designed for frontline combat and breakthrough operations."
+ tank_unit_gen6:0 "Gen VI - Tank Unit"
+ tank_unit_gen6_plural:0 "Generation 6 Tank Squadron"
+ tank_unit_gen6_desc:0 "A Mk6 tank unit is a military formation that operates armored vehicles equipped with heavy guns, designed for frontline combat and breakthrough operations."
+ # Buildings
+ building_mechmil_tank_factory:0 "Tank Factory"
+ building_mechmil_tank_factory_desc:0 "A tank factory is a specialized facility where armored combat vehicles are designed, manufactured, and assembled for military use."
+ building_mechmil_mega_tank_factory:0 "Mega Tank Factory"
+ building_mechmil_mega_tank_factory_desc:0 "A mega tank factory is a specialized facility where new robust and technologically improved combat vehicles are designed, manufactured, and assembled for military use."
+ # Techs
+ tech_mechmilarmy_tank_factory:0 "Tank Factories"
+ tech_mechmilarmy_tank_factory_desc:0 "Tank Factories"
+ tech_mechmilarmy_mega_tank_factory:0 "Mega Tank Factories"
+ tech_mechmilarmy_mega_tank_factory_desc:0 "Mega Tank Factories"
+ tech_mechmilarmy_tank_upgrade_1:0 "Bigger Guns"
+ tech_mechmilarmy_tank_upgrade_1_desc:0 "The second generation had enhanced night-fighting capabilities and in most cases NBC protection. Most western tanks of this generation were armed with the 105 mm Royal Ordnance L7 tank gun or derivatives of it."
+ tech_mechmilarmy_tank_upgrade_2:0 "Composite Armour"
+ tech_mechmilarmy_tank_upgrade_2_desc:0 "The third generation of main battle tanks is characterized by composite armour and computer stabilized fire control systems, which allow firing on the move as well as very high first hit probability on targets up to 2,000 meters away."
+ tech_mechmilarmy_tank_upgrade_3:0 "Uranium Plates"
+ tech_mechmilarmy_tank_upgrade_3_desc:0 "These are third-generation tanks modernized with fourth-generation technology."
+ tech_mechmilarmy_tank_upgrade_4:0 "Uranium Plates"
+ tech_mechmilarmy_tank_upgrade_4_desc:0 "Next generation or fourth generation tanks are still under development or at early stages of their generation. While the term "(fourth) next generation" has no formal basis, these main battle tanks are using the latest technology and designs to compete in the current advanced warfare environment."
+ 
+ ## Naval Armies
+ rib_unit:0 "RIB Unit"
+ rib_unit_desc:0 "A rigid inflatable boat (RIB), also rigid-hull inflatable boat or rigid-hulled inflatable boat (RHIB), is a lightweight but high-performance and high-capacity boat constructed with a rigid hull bottom joined to side-forming air tubes that are inflated with air to a high pressure so as to give the sides resilient rigidity along the boat's topsides."
+ rib_unit_plural:0 "RIB Squad"
+ hovercraft_unit:0 "Hovercraft Unit"
+ hovercraft_unit_desc:0 "Hovercraft will accomplish any task performed by a fast boat, but will also operate where no boat can venture. Over land and sea mines, sand, mud, ice, snow, rocks, weeds, logs, debris and rapids they are not restricted by suitable water depths."
+ hovercraft_unit_plural:0 "Hovercraft Fleet"
+ fast_attack_craft_unit:0 "Fast Attack Craft (FAC)"
+ fast_attack_craft_unit_desc:0 "Fast Attack Craft (FAC)"
+ fast_attack_craft_unit_plural:0 "Fast Attack Craft (FAC)"
+ patrol_boat_unit:0 "Patrol Boat"
+ patrol_boat_unit_desc:0 ""
+ patrol_boat_unit_plural:0 "Patrol Boats"
+ corvette_boat_unit:0 "Corvette Vessel"
+ corvette_boat_unit_desc:0 ""
+ corvette_boat_unit_plural:0 "Corvettes"
+ frigate_boat_unit:0 "Frigate Vessel"
+ frigate_boat_unit_desc:0 ""
+ frigate_boat_unit_plural:0 "Frigates"
+ destroyer_boat_unit:0 "Destroyer Vessel"
+ destroyer_boat_unit_desc:0 ""
+ destroyer_boat_unit_plural:0 "Destroyers"
+ light_cruiser_boat_unit:0 "Light Cruiser Vessel"
+ light_cruiser_boat_unit_desc:0 ""
+ light_cruiser_boat_unit_plural:0 "Light Cruisers"
+ heavy_cruiser_boat_unit:0 "Heavy Cruiser Vessel"
+ heavy_cruiser_boat_unit_desc:0 ""
+ heavy_cruiser_boat_unit_plural:0 "Heavy Cruisers"
+ battle_cruiser_boat_unit:0 "Battlecruiser Vessel"
+ battle_cruiser_boat_unit_desc:0 ""
+ battle_cruiser_boat_unit_plural:0 "Battlecruisers"
+ battleship_boat_unit:0 "Battleship Vessel"
+ battleship_boat_unit_desc:0 ""
+ battleship_boat_unit_plural:0 "Battleships"
+ submarine_unit:0 "Submarine Vessel"
+ submarine_unit_desc:0 ""
+ submarine_unit_plural:0 "Submarines"
+ nuclear_submarine_unit:0 "Nuclear Submarine Vessel"
+ nuclear_submarine_unit_desc:0 ""
+ nuclear_submarine_unit_plural:0 "Nuclear Submarines"
+ stealth_boat_unit:0 "Stealth Ship Vessel"
+ stealth_boat_unit_desc:0 ""
+ stealth_boat_unit_plural:0 "Stealth Ships"
+ amphibious_assualt_boat_unit:0 "Amphibious Assault Ship"
+ amphibious_assualt_boat_unit_desc:0 ""
+ amphibious_assualt_boat_unit_plural:0 "Amphibious Assault Ships"
+ helicopter_carrier_boat_unit:0 "Helicopter Carrier"
+ helicopter_carrier_boat_unit_desc:0 ""
+ helicopter_carrier_boat_unit_plural:0 "Helicopter Carriers"
+ aircraft_carrier_boat_unit:0 "Aircraftr Carrier"
+ aircraft_carrier_boat_unit_desc:0 ""
+ aircraft_carrier_boat_unit_plural:0 "Aircraft Carriers"
+ 
+ building_mechmil_small_naval_dock:0 "Small Naval Dock"
+ building_mechmil_small_naval_dock:0 "Small Naval Dock that allows the training of some small water craft military vehicles."
+ building_mechmil_medium_naval_dock:0 "Medium Naval Dock"
+ building_mechmil_medium_naval_dock:0 "Medium Naval Dock that allows the training of some medium water craft military vehicles."
+ building_mechmil_large_naval_dock:0 "Large Naval Dock"
+ building_mechmil_large_naval_dock:0 "Large Naval Dock that allows the training of some large water craft military vehicles."
+ tech_mechmilarmy_naval_warfare:0 "Naval Warfare"
+ tech_mechmilarmy_naval_warfare_desc:0 "Naval Warfare"
+ tech_mechmilarmy_naval_warfare_2:0 "Reinforced Hulls"
+ tech_mechmilarmy_naval_warfare_2_desc:0 "Reinforced Hulls"
+ tech_mechmilarmy_naval_warfare_3:0 "Naval Warfare 3"
+ tech_mechmilarmy_naval_warfare_3_desc:0 "Naval Warfare 3"
+ 
+ ### Defense Armies
+ # Anti Tank Unit
+ anti_tank_unit:0 "Anti-Tank Unit"
+ anti_tank_unit_plural:0 "Anti-Tank Squadron"
+ anti_tank_unit_desc:0 "An anti-tank unit is a military team equipped with specialized weapons designed to destroy enemy armored vehicles, such as tanks and armored personnel carriers."
+ 
+ # End Game Buildings
+ building_mechmil_vanguard_vehicle_forge:0 "Vanguard Vehicle Forge"
+ building_mechmil_vanguard_vehicle_forge_desc:0 "A tank factory is a specialized facility where armored combat vehicles are designed, manufactured, and assembled for military use."
+ 
+ ## Custom Tooltips
+ requires_tank_factory:0 "Requires a Tank Factory or an Armoured Vehicle Plant before being able to train these armies."
+ requires_armoured_vehicle_factory:0 "Requires one of the following, Armoured Vehicle Plant, Mega Armoured Vehicle Plant, Ultimate Armoured Vehicle Plant, or a Vanguard Vehicle Forge building to assemble these armies."
+ requires_stronghold:0 "Requires a Stronghold before being able to train these armies."
+ requires_fortress:0 "Requires a Fortress before being able to train these armies."
+ requires_naval_dock:0 "Requires at least a Small Naval Dock to train these armies."

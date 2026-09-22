@@ -1,0 +1,87 @@
+spriteTypes = {
+	# Dog Unit 
+	spriteType = {
+		name = "gfx_army_type_dog_unit"
+		textureFile = "gfx/interface/planetview/dogunit.dds"
+	}
+	# Paratrooper Unit 
+	spriteType = {
+		name = "gfx_army_type_paratrooper_unit"
+		textureFile = "gfx/interface/planetview/paratrooperunit.dds"
+	}
+	# Mortar Unit 
+	spriteType = {
+		name = "gfx_army_type_mortar_unit"
+		textureFile = "gfx/interface/planetview/mortarunit.dds"
+	}
+	# Artillery Unit 
+	spriteType = {
+		name = "gfx_army_type_artillery_unit"
+		textureFile = "gfx/interface/planetview/artilleryunit.dds"
+	}
+	# Drone Unit 
+	spriteType = {
+		name = "gfx_army_type_bomb_drone_unit"
+		textureFile = "gfx/interface/planetview/bombdroneunit.dds"
+	}
+	# Tank Unit 
+	spriteType = {
+		name = "gfx_army_type_tank_unit"
+		textureFile = "gfx/interface/planetview/tankunit.dds"
+	}
+	# LAV Unit 
+	spriteType = {
+		name = "gfx_army_type_lav_unit"
+		textureFile = "gfx/interface/planetview/lavunit.dds"
+	}
+	# APC Unit 
+	spriteType = {
+		name = "gfx_army_type_apc_unit"
+		textureFile = "gfx/interface/planetview/apcunit.dds"
+	}
+	# IFV Unit 
+	spriteType = {
+		name = "gfx_army_type_ifv_unit"
+		textureFile = "gfx/interface/planetview/ifvunit.dds"
+	}
+	# Anti-tank Unit
+	spriteType = {
+		name = "gfx_army_type_antitank_unit"
+		textureFile = "gfx/interface/planetview/antitankunit.dds"
+	}
+	# Hovercraft Unit
+	spriteType = {
+		name = "gfx_army_type_hovercraft_unit"
+		textureFile = "gfx/interface/planetview/hovercraftunit.dds"
+	}
+	# RIB Unit
+	spriteType = {
+		name = "gfx_army_type_rib_unit"
+		textureFile = "gfx/interface/planetview/ribunit.dds"
+	}
+	# Fast Attack Craft Unit
+	spriteType = {
+		name = "gfx_army_type_fast_attack_craft_unit"
+		textureFile = "gfx/interface/planetview/fastattackcraftunit.dds"
+	}
+	# Patrol Boat Unit
+	spriteType = {
+		name = "gfx_army_type_patrol_boat_unit"
+		textureFile = "gfx/interface/planetview/patrolboatunit.dds"
+	}
+	# Corvette Boat Unit
+	spriteType = {
+		name = "gfx_army_type_corvette_boat_unit"
+		textureFile = "gfx/interface/planetview/patrolboatunit.dds"
+	}
+	# Frigate Boat Unit
+	spriteType = {
+		name = "gfx_army_type_frigate_boat_unit"
+		textureFile = "gfx/interface/planetview/frigateboatunit.dds"
+	}
+	# Destroyer Boat Unit
+	spriteType = {
+		name = "gfx_army_type_destroyer_boat_unit"
+		textureFile = "gfx/interface/planetview/destroyerboatunit.dds"
+	}
+}

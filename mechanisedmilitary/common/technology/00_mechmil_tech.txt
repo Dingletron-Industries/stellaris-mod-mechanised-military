@@ -1,0 +1,423 @@
+## Mechanised Military
+# Tech 1 - Bomb Drones and Dogs
+tech_mechmilarmy_advanced_armies1 = {
+	cost = @tier1cost1
+	area = society
+	tier = 1
+	weight = @tier1weight1
+	prerequisites = {
+		tech_assault_armies
+	}
+	category = {
+		military_theory
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_assault_armies
+		}
+	}
+}
+
+# Tech 2 - Mortars
+tech_mechmilarmy_advanced_armies2 = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	weight = @tier2weight1
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	category = {
+		military_theory
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_advanced_armies1
+		}
+	}
+}
+# Tech 3 - Artillery
+tech_mechmilarmy_artillery = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	weight = @tier2weight1
+	prerequisites = {
+		tech_mechmilarmy_advanced_armies1
+	}
+	category = {
+		military_theory
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_advanced_armies1
+		}
+	}
+}
+
+## Armoured Vehicle Techs
+# Tech 4 - Armoured Vehicles
+tech_mechmilarmy_armoured_vehicles = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_ship_armor_1
+		tech_mechmilarmy_advanced_armies2
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_advanced_armies2
+		}
+	}
+}
+
+# Tech 5 - Armoured Vehicles Upgrade 1
+tech_mechmilarmy_armoured_vehicles_upgrade_one = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_armoured_vehicles
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_advanced_armies2
+		}
+	}
+}
+
+## Tank Techs
+# Tech 6 - Tank Factories (Gives access to Mk1, but allows Mk1 - Mk3 to be built here)
+tech_mechmilarmy_tank_factory = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_ship_armor_2
+		tech_mechmilarmy_armoured_vehicles
+		tech_mass_drivers_2
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_advanced_armies2
+		}
+	}
+}
+
+# Tech 7 - Tank Upgrades 1 (Gives access to Mk2)
+tech_mechmilarmy_tank_upgrade_1 = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_tank_factory
+	}
+	category = {
+		materials
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_tank_factory
+		}
+	}
+}
+
+# Tech 8 - Tank Upgrades 2 (Gives access to Mk3)
+tech_mechmilarmy_tank_upgrade_2 = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_1
+	}
+	category = {
+		materials
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_tank_upgrade_1
+		}
+	}
+}
+
+# Tech 9 - Mega Tank Factories (Gives access to Mk4 - Mk6)
+tech_mechmilarmy_mega_tank_factory = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 3
+	weight = @tier3weight1
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_2
+	}
+	category = {
+		materials
+	}
+	is_rare = yes
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_tank_upgrade_2
+		}
+	}
+}
+
+# Tech 10 - Tank Upgrades 3 (Gives access to Mk5)
+tech_mechmilarmy_tank_upgrade_3 = {
+	cost = @tier2cost3
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_mega_tank_factory
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_mega_tank_factory
+		}
+	}
+}
+
+# Tech 11 - Tank Upgrades 4 (Gives access to Mk6)
+tech_mechmilarmy_tank_upgrade_4 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_tank_upgrade_3
+	}
+	category = {
+		materials
+	}
+	is_rare = yes
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_tank_upgrade_3
+		}
+	}
+}
+
+## Naval Techs
+# Tech 12 - Naval Warfare
+tech_mechmilarmy_naval_warfare = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_ship_armor_1
+		tech_mechmilarmy_advanced_armies2
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+		any_planet_within_border = {
+			is_planet_class = pc_ocean
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_advanced_armies2
+		}
+	}
+}
+
+# Tech 13 - Naval Warfare 2
+tech_mechmilarmy_naval_warfare_2 = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+		any_planet_within_border = {
+			is_planet_class = pc_ocean
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_naval_warfare
+		}
+	}
+}
+
+# Tech 14 - Naval Warfare 3
+tech_mechmilarmy_naval_warfare_3 = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_2
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+		any_planet_within_border = {
+			is_planet_class = pc_ocean
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_naval_warfare_2
+		}
+	}
+}
+
+# Tech 15 - Submarines
+tech_mechmilarmy_submarines = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	weight = @tier2weight2
+	prerequisites = {
+		tech_mechmilarmy_naval_warfare_2
+	}
+	category = {
+		industry
+	}
+	is_rare = no
+	potential = {
+		founder_species = {
+			is_species_class = HUM
+		}
+		any_planet_within_border = {
+			is_planet_class = pc_ocean
+		}
+	}
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			has_technology = tech_mechmilarmy_naval_warfare_2
+		}
+	}
+}

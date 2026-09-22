@@ -1,0 +1,484 @@
+## Mechanised Military Buildings
+
+# Variables
+@mm1_jobs = 1
+@mm2_jobs = 2
+
+# Base Building - Armoured Vehicle Plant Level 1
+building_mechmil_armoured_vehicle_plant = {
+	base_buildtime = 180
+	can_build = yes
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm1_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm1_jobs
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 10000
+			alloys =  2500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 8
+		}
+	}
+
+	prerequisites = {
+		"tech_mechmilarmy_armoured_vehicles"
+	}
+
+	upgrades = {
+		"building_mechmil_mega_armoured_vehicle_plant"
+	}
+}
+
+# Upgrade Building - Armoured Vehicle Plant Level 2
+building_mechmil_mega_armoured_vehicle_plant = {
+	base_buildtime = 360
+	can_build = no
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 15000
+			alloys =  5000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 16
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm2_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm2_jobs
+		}
+	}
+	prerequisites = {
+		"tech_mechmilarmy_mega_tank_factory"
+	}
+	upgrades = {
+		"building_mechmil_ultimate_armoured_vehicle_plant"
+	}
+}
+
+# Upgrade Building - Armoured Vehicle Plant Level 3
+building_mechmil_ultimate_armoured_vehicle_plant = {
+	base_buildtime = 360
+	can_build = no
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 15000
+			alloys =  5000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 16
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm2_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm2_jobs
+		}
+	}
+	prerequisites = {
+		"tech_mechmilarmy_mega_tank_factory"
+	}
+}
+
+# Base Building - Tank Factory - Level 1
+building_mechmil_tank_factory = {
+	base_buildtime = 180
+	can_build = yes
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm1_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm1_jobs
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 10000
+			alloys =  2500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 8
+		}
+	}
+
+	prerequisites = {
+		"tech_mechmilarmy_tank_factory"
+	}
+
+	upgrades = {
+		"building_mechmil_mega_tank_factory"
+	}
+}
+
+# Upgrade Building - Tank Factory Level 2
+building_mechmil_mega_tank_factory = {
+	base_buildtime = 360
+	can_build = no
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 15000
+			alloys =  5000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 16
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm2_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm2_jobs
+		}
+	}
+	prerequisites = {
+		"tech_mechmilarmy_mega_tank_factory"
+	}
+}
+
+# Base Building - End Game Military Vehicle Factory Level 1 (Allows contruction of all land based vehicle units).
+building_mechmil_vanguard_vehicle_forge = {
+	base_buildtime = 360
+	can_build = no
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+	potential = {
+		exists = owner
+		NOT = { has_modifier = resort_colony }
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 15000
+			alloys =  5000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 16
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm2_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm2_jobs
+		}
+	}
+	prerequisites = {
+		"tech_mechmilarmy_tank_upgrade_4"
+	}
+}
+
+## Naval Buildings
+# Base Building - Small Naval Dock
+building_mechmil_small_naval_dock = {
+	base_buildtime = 180
+	can_build = yes
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm1_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm1_jobs
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+		is_planet_class = pc_ocean
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 10000
+			alloys =  2500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 8
+		}
+	}
+
+	prerequisites = {
+		"tech_mechmilarmy_naval_warfare"
+	}
+
+	upgrades = {
+		"building_mechmil_medium_naval_dock"
+	}
+}
+
+# Upgrade Building - Medium Naval Dock
+building_mechmil_medium_naval_dock = {
+	base_buildtime = 180
+	can_build = no
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm1_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm1_jobs
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+		is_planet_class = pc_ocean
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 10000
+			alloys =  2500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 8
+		}
+	}
+
+	prerequisites = {
+		"tech_mechmilarmy_naval_warfare"
+	}
+
+	upgrades = {
+		"building_mechmil_large_naval_dock"
+	}
+}
+
+# Upgrade Building - Large Naval Dock
+building_mechmil_large_naval_dock = {
+	base_buildtime = 180
+	can_build = no
+	planetary_ftl_inhibitor = no
+	position_priority = 100
+	can_be_ruined = yes
+	category = army
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = @mm1_jobs
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = @mm1_jobs
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+		is_planet_class = pc_ocean
+	}
+	resources = {
+		category = planet_buildings_strongholds
+		cost = {
+			minerals = 10000
+			alloys =  2500
+		}
+		upkeep = {
+			energy = 5
+			alloys = 8
+		}
+	}
+
+	prerequisites = {
+		"tech_mechmilarmy_naval_warfare"
+	}
+}
